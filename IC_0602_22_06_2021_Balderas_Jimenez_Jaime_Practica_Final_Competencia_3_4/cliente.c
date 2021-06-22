@@ -32,7 +32,6 @@ void func(int sockfd){
 		write(sockfd, buff2, sizeof(buff2));
 		
 		//Imprime el resultado que envia el servidor
-		//bzero(sum, MAX);
 		read(sockfd, sum, sizeof(sum));
 		printf("Desde servidor resultado = %i\n", sum);
 }
